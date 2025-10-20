@@ -41,7 +41,7 @@ local options = {
 	-- these last four options are for ufo nvim
 	foldcolumn = '0', -- it will preview the fold levels in the line numbers
 	foldlevel = 99, -- Using ufo provider need a large value, feel free to decrease the value
-	foldlevelstart = 0,
+	foldlevelstart = 99,
 	foldenable = true
 }
 
