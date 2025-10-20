@@ -70,9 +70,9 @@ keymap("n", "<leader>h", ":noh<CR>", opts)
 -- Map Alt+Backspace to Ctrl+W in insert mode
 -- vim.api.nvim_set_keymap('i', '<C-BS>', '<C-W>', { noremap = true }) -- update, i just rempped it to my kitty terminal itself
 
--- Mapping of oil file tree
-vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
-vim.keymap.set("n", "<leader>e", "<CMD>NvimTreeToggle<CR>", { desc = "Opens the nvim tree" })
+-- Mapping of file tree
+vim.keymap.set("n", "<leader>e", "<CMD>Fyler kind=split_right<CR>", { desc = "Opens the fyler tree" })
+vim.keymap.set("n", "<leader>E", "<CMD>Fyler kind=float<CR>", { desc = "Opens the fyler tree in float" })
 
 -- It will make sure that the cursor in the middle of the file wile navigating
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
