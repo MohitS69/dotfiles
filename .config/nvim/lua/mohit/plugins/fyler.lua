@@ -37,9 +37,9 @@ return {
                 },
                 -- Directory icons
                 icon = {
-                    directory_collapsed = nil,
-                    directory_empty = nil,
-                    directory_expanded = nil
+                    -- directory_collapsed = "",
+                    directory_empty = "",
+                    -- directory_expanded = ""
                 },
                 -- Icon provider (none, mini_icons or nvim_web_devicons)
                 icon_provider = "mini_icons",
