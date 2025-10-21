@@ -32,21 +32,18 @@ return {
         -- susbstitute(replace the current file with the harpoons
         -- with this the given index ) 
         -- harpoon file 1-4 with new files
-        vim.keymap.set("n", "<leader><C-q>", function()
+        vim.keymap.set("n", "<leader>j", function()
             harpoon:list():replace_at(1)
         end)
-        vim.keymap.set("n", "<leader><C-w>", function()
+        vim.keymap.set("n", "<leader>k", function()
             harpoon:list():replace_at(2)
         end)
-        vim.keymap.set("n", "<leader><C-e>", function()
+        vim.keymap.set("n", "<leader>l", function()
             harpoon:list():replace_at(3)
         end)
-        vim.keymap.set("n", "<leader><C-r>", function()
+        vim.keymap.set("n", "<leader>;", function()
             harpoon:list():replace_at(4)
         end)
 
-        -- Toggle previous & next buffers stored within Harpoon list
-        -- vim.keymap.set("n", "<C-S-P>", function() harpoon:list():prev() end)
-        -- vim.keymap.set("n", "<C-S-N>", function() harpoon:list():next() end)
     end,
 }

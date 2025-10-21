@@ -58,14 +58,8 @@ keymap("x", "K", ":move '<-2<CR>gv=gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
--- Bufferline
-keymap("n", "<leader>bl", ":BufferLineCloseRight<CR>", opts)
-keymap("n", "<leader>bh", ":BufferLineCloseLeft<CR>", opts)
-keymap("n", "<leader>c", ":Bdelete!<CR>", {noremap = true, silent = true, nowait = 0})
-keymap("n", "<leader>bj", ":BufferLinePick<CR>", opts)
-keymap("n", "<leader>be", ":BufferLinePickClose<CR>", opts)
 -- Search clearing
-keymap("n", "<leader>h", ":noh<CR>", opts)
+keymap("n", "<leader>c", ":noh<CR>", opts)
 
 -- Map Alt+Backspace to Ctrl+W in insert mode
 -- vim.api.nvim_set_keymap('i', '<C-BS>', '<C-W>', { noremap = true }) -- update, i just rempped it to my kitty terminal itself
