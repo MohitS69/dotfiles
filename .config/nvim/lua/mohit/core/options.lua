@@ -48,11 +48,3 @@ local options = {
 for k, v in pairs(options) do
 	vim.opt[k] = v
 end
-
--- this will automatically delete the buffer once you leave it.
-vim.api.nvim_create_autocmd("BufReadPost", {
-  pattern = "*",
-  callback = function()
-    vim.bo.bufhidden = "wipe"
-  end,
-})
