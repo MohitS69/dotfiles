@@ -35,7 +35,7 @@ local options = {
 	-- guifont = "JetBrainsMonoNerdFonts", -- the font used in graphical neovim applications
 	whichwrap = "bs<>[]hl", -- which "horizontal" keys are allowed to travel to prev/next line
 	-- clipboard = "unnamedplus", -- allows neovim to access the system clipboard
-	-- laststatus = 0,
+	laststatus = 3,
 	guicursor = "",
 	winborder = "rounded",
 	-- these last four options are for ufo nvim

@@ -95,6 +95,22 @@ return {
 			filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
 		})
 
+		vim.lsp.config("yamlls", {
+			settings = {
+				yaml = {
+					schemas = vim.tbl_extend("force", {
+						-- Base schemas from lsp-setup.lua are already included
+						kubernetes = "k8s-*.yaml",
+						["http://json.schemastore.org/ansible-stable-2.9"] = "roles/tasks/**/*.{yml,yaml}",
+						["http://json.schemastore.org/prettierrc"] = ".prettierrc.{yml,yaml}",
+						["http://json.schemastore.org/kustomization"] = "kustomization.{yml,yaml}",
+						["http://json.schemastore.org/chart"] = "Chart.{yml,yaml}",
+						["http://json.schemastore.org/circleciconfig"] = ".circleci/**/*.{yml,yaml}",
+					}, {}),
+				},
+			},
+		})
+
 		vim.lsp.config("lua_ls", {
 			settings = {
 				Lua = {
